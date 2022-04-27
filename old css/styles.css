@@ -301,6 +301,8 @@ img {
     max-width: 1600px;
 }
 
+/* backdrop */
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -479,7 +481,6 @@ img {
 .modal-form__checkbox:checked + .modal-form__checkbox-icon{
     fill: var(--accent-color);
 }
-
 
 .modal-form__checkbox-label {
     display: flex;
