@@ -81,15 +81,15 @@
     &:not(:last-child) {
         margin-bottom: 10px;
     }
-
-    &:last-child {
-        margin-bottom: 20px;
-    }
 }
 
 .modal-form__input-thumb {
     position: relative;
     width: 100%;
+}
+
+.modal-form__list {
+    margin-bottom: 20px;
 }
 
 .modal-form__label {
