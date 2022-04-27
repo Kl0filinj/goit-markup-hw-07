@@ -164,7 +164,7 @@ img {
     color: var(--accent-color);
 }
 
-.nav-menu__link::after {
+.nav-menu__link.nav-menu__link--current-page::after {
     content: '';
 
     position: absolute;
@@ -175,13 +175,13 @@ img {
     height: 4px;
     border-radius: 2px;
 
-    opacity: 0;
+    opacity: 1;
     background-color: var(--accent-color);
 }
 
-.nav-menu__link.nav-menu__link--current-page::after {
+/* .nav-menu__link.nav-menu__link--current-page::after {
     opacity: 1;
-}
+} */
 
 .auth-info__link {
     display: flex;
