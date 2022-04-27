@@ -26,9 +26,7 @@
 
 .benefits-list__item {
     max-width: 270px;
-}
 
-.benefits-list__item {
     &:not(:first-child) {
         margin-left: 30px;
     }

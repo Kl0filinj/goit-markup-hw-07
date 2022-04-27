@@ -40,9 +40,7 @@
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-}
 
-.logo--accent {
     &.logo--dark {
         color: $headline-color;
     }
@@ -65,24 +63,13 @@
     text-decoration: none;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.nav-menu__item {
-    &:not(:first-child){
-        margin-left: 50px;
-    }
-}
-
-.nav-menu__link,
-.footer-address__link {
     &:hover,
     &:focus {
         color: $accent-color;
     }
-}
 
-.nav-menu__link {
-	&.nav-menu__link--current-page {
+    &.nav-menu__link--current-page {
 		&::after {
 			content: '';
 			position: absolute;
@@ -95,6 +82,12 @@
 			background-color: $accent-color;
 		}
 	}
+}
+
+.nav-menu__item {
+    &:not(:first-child){
+        margin-left: 50px;
+    }
 }
 
 .auth-info__link {
@@ -114,6 +107,14 @@
     text-decoration: none;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+     color: $accent-color;
+     .auth-info__icon {
+         fill: $accent-color;
+     }
+    }
 }
 
 .auth-info__icon {
@@ -121,22 +122,6 @@
     margin-right: 10px;
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.auth-info__link {
-   &:hover,
-   &:focus {
-    color: $accent-color;
-   }
-}
-
-.auth-info__link {
-   &:hover,
-   &:focus {
-       .auth-info__icon {
-           fill: $accent-color;
-       }
-   }
 }
 
 .auth-info__item {
